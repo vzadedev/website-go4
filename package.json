@@ -28,7 +28,8 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.2.0",
-    "three": "^0.160.0"
+    "three": "^0.160.0",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.8",
