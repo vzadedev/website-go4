@@ -1,0 +1,9 @@
+.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+  color: #385880 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color:#0065af !important;
+}
+

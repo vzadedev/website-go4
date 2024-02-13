@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container {
+  background: rgba(0, 101, 175, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #212121;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4A4A4A;
+}
+
+.leaflet-container {
+  height: 100%; 
+  width: 100%; 
+}
+
+.item {
+  min-width: 13rem;
+  height: 13rem;
+  padding: 1rem;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  padding: 10px;
+}
+
+.inner-carousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.itemMobile {
+  min-width: 20rem;
+  height: 31.5rem; 
+
+  width: 100%;
+  height: 100%;
+}
+
+.itemMobile:nth-child(1) {
+  margin-left: 5em;
+}
+
+@media screen and (max-width: 100%) {
+  .itemMobile:nth-child(1) {
+    margin-left: 0em;
+  }
+}
+
+.itemMobile img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.rec-dot_active {
+  background-color: transparent !important;
+  box-shadow: 0 0 1px 3px #385880 !important;
+}
+.rec-dot:focus,
+.rec-dot:hover {
+  box-shadow: 0 0 1px 3px #385880 !important;
+}
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+  background-color: transparent !important;
+  box-shadow: 0 0 1px 3px #385880 !important;
+}
+.rec-arrow {
+  background-color: transparent !important;
+  box-shadow: 0 0 1px 3px transparent !important;
+  transition: all 0.3s ease;
+  color: gray  !important;
+}
+.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+  color: #385880 !important;
+}
+.slick-slider {
+  margin:0 -15px;
+}
+.slick-slide {
+  padding:10px;
+}
+.slick-dots {
+  top: 105%;
+  list-style-type: none;
+}
