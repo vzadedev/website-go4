@@ -1,8 +1,14 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page";
+import { PhotoModal } from "@/components/photoModal/photoModal";
+import { useState } from "react";
 
 const TireLife = () => {
+
+  const [modal, setModal] = useState(false)
+  const [url, setUrl] = useState("")
+
   return (
     <>
       <div className="p-16">
@@ -41,14 +47,36 @@ const TireLife = () => {
               </p>
             </div>
             <div aria-hidden="true" className="grid grid-cols-3 mt-10 lg:mt-0 gap-3">
-              <img src="/static/images/tires/compra.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
-              <img src="/static/images/tires/importacao.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
-              <img src="/static/images/tires/mobilizacao.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/compra.png");
+                }}
+                src="/static/images/tires/compra.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/importacao.png");
+                }}
+                src="/static/images/tires/importacao.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/mobilizacao.png");
+                }}
+                src="/static/images/tires/mobilizacao.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
       </section>
       
+      {modal && url && (
+        <PhotoModal
+          open={modal}
+          setOpen={(value) => setModal(value)}
+          url={url}
+        />
+      )}
     </>
   );
 }

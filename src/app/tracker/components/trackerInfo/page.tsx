@@ -3,8 +3,13 @@
 import MapIcon from '@mui/icons-material/Map';
 
 import { AnimatedText } from '@/components/animation/page';
+import { useState } from 'react';
+import { PhotoModal } from '@/components/photoModal/photoModal';
 
 const TrackerInfo = () => {
+
+  const [modal, setModal] = useState(false)
+  const [url, setUrl] = useState("")
 
   return (
     <>
@@ -12,17 +17,37 @@ const TrackerInfo = () => {
         <div className='grid lg:grid-cols-2 max-w-screen-xl mx-auto gap-10 my-20 px-5'>
           <div>
             <div className=' h-[70%]'>
-              <img className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/map.png" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/system/tracker/map.png");
+                }}
+                className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/map.png" />
             </div>
             <div className='grid grid-cols-3 items-center justify-center max-w-screen-lg mt-6 gap-10'>
               <div>
-                <img className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapTruck.png" />
+                <img 
+                  onClick={() => {
+                    setModal(true);
+                    setUrl("/static/images/system/tracker/mapTruck.png");
+                  }}
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapTruck.png" />
               </div>
               <div>
-                <img className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapCar.png" />
+                <img 
+                  onClick={() => {
+                    setModal(true);
+                    setUrl("/static/images/system/tracker/mapCar.png");
+                  }}
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapCar.png" />
               </div>
               <div>
-                <img className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/cluster.png" />
+                <img 
+                  onClick={() => {
+                    setModal(true);
+                    setUrl("/static/images/system/tracker/cluster.png");
+                  }}
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/cluster.png" />
               </div>
             </div>
           </div>
@@ -48,7 +73,15 @@ const TrackerInfo = () => {
             </div>
           </div>
         </div>
-      </main>
+      </main>     
+
+      {modal && url && (
+        <PhotoModal
+          open={modal}
+          setOpen={(value) => setModal(value)}
+          url={url}
+        />
+      )}
     </>
   );
 };

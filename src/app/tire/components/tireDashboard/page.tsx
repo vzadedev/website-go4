@@ -1,8 +1,14 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page";
+import { PhotoModal } from "@/components/photoModal/photoModal";
+import { useState } from "react";
 
 const TireDashboard = () => {
+
+  const [modal, setModal] = useState(false)
+  const [url, setUrl] = useState("")
+
   return (
     <>
       <section className="bg-white">
@@ -15,7 +21,12 @@ const TireDashboard = () => {
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/tires/dashboard.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/dashboard.png");
+                }}
+                src="/static/images/tires/dashboard.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
@@ -24,7 +35,12 @@ const TireDashboard = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center py-4">
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/tires/dashboard.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/tabela.png");
+                }}
+                src="/static/images/tires/tabela.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
             <div>
               <AnimatedText
@@ -55,7 +71,12 @@ const TireDashboard = () => {
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/tires/visualizacaostatu.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/tires/visualizacaostatu.png");
+                }}
+                src="/static/images/tires/visualizacaostatu.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
@@ -64,7 +85,12 @@ const TireDashboard = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center">
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/tires/Relatorio.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+              onClick={() => {
+                setModal(true);
+                setUrl("/static/images/tires/Relatorio.png");
+              }}
+              src="/static/images/tires/Relatorio.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
             <div>
               <AnimatedText
@@ -83,6 +109,13 @@ const TireDashboard = () => {
         </div>
       </section>
       
+      {modal && url && (
+        <PhotoModal
+          open={modal}
+          setOpen={(value) => setModal(value)}
+          url={url}
+        />
+      )}
     </>
   );
 }
