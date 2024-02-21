@@ -96,8 +96,6 @@ const ScreensNav = () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
-
-  console.log(booleans.mobile);
   
   return (
     <div className={`fixed ${!navbar ? `bg-transparent` : `bg-white`} w-full h-14 z-50 justify-between transition-all duration-500 ease-in-out`}>

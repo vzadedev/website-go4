@@ -1,8 +1,14 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page";
+import { PhotoModal } from "@/components/photoModal/photoModal";
+import { useState } from "react";
 
 const FuelDashboard = () => {
+
+  const [modal, setModal] = useState(false)
+  const [url, setUrl] = useState("")
+
   return (
     <>
       <section className="bg-white">
@@ -18,11 +24,15 @@ const FuelDashboard = () => {
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Através dos  Dashboard, a tomada de decisão para resolver um desvio e ate mesmo identificar
                 um consumo, fora do padrão estabelecido e mais simples, pois ligado diretamente com a operação
-                em campo os dados são atualizados, quase que em tempo real. 
+                em campo os dados são atualizados, quase que em tempo real.
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/fuel/combustivelDash.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => {
+                setModal(true);
+                setUrl("/static/images/fuel/combustivelDash.png");
+              }}
+              src="/static/images/fuel/combustivelDash.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
@@ -31,7 +41,12 @@ const FuelDashboard = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center">
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/fuel/dashboardTabela.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/fuel/dashboardTabela.png");
+                }}
+                src="/static/images/fuel/dashboardTabela.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
             <div>
               <AnimatedText
@@ -64,12 +79,24 @@ const FuelDashboard = () => {
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/fuel/relatorios.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img 
+                onClick={() => {
+                  setModal(true);
+                  setUrl("/static/images/fuel/relatorios.png");
+                }}
+                src="/static/images/fuel/relatorios.png" alt="" className="mx-auto rounded-sm shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
       </section>
-      
+
+      {modal && url && (
+        <PhotoModal
+          open={modal}
+          setOpen={(value) => setModal(value)}
+          url={url}
+        />
+      )}
     </>
   );
 }

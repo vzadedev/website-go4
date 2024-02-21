@@ -1,8 +1,13 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page"
+import { PhotoModal } from "@/components/photoModal/photoModal";
+import { useState } from "react";
 
 const EquipmentRegister = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <>
       <div className="p-16">
@@ -35,18 +40,20 @@ const EquipmentRegister = () => {
                 className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
-                O cadastro de equipamentos é uma etapa fundamental para a eficiente gestão da frota em sua empresa.
-                Este cadastro é necessário para as demais funções que utilizam a frota de sua empresa, como o rastreamento desta,
-                adição dos pneus neste, planos de manutenção preventiva e corretiva entre outros.
+                É no cadastro inicial da FROTA, que alinhamos os padrões para uma boa gestão dos ativos.
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/fleet/modal.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => setModal(true)} src="/static/images/fleet/modal.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
       </section>
       
+    {modal && (
+      <PhotoModal open={modal} setOpen={(value) => setModal(value)} url="/static/images/fleet/modal.png"/>
+    )}
+
     </>
   );
 }

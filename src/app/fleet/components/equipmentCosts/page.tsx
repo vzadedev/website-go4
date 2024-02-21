@@ -1,8 +1,14 @@
 "use client"
 
+import { useState } from "react";
+
 import AnimatedText from "@/components/animation/page"
+import { PhotoModal } from "@/components/photoModal/photoModal";
 
 const EquipmentCosts = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <>
       <section className="bg-primary-dark py-4">
@@ -20,7 +26,7 @@ const EquipmentCosts = () => {
               </p>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-              <img src="/static/images/fleet/custohora.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => setModal(true)} src="/static/images/fleet/custohora.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
@@ -68,6 +74,14 @@ const EquipmentCosts = () => {
           </div>
         </div>
       </section>
+
+      {modal && (
+        <PhotoModal 
+          open={modal} 
+          setOpen={(value) => setModal(value)} 
+          url="/static/images/fleet/custohora.png"
+        />
+      )}
     </>
   );
 }

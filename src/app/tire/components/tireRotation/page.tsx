@@ -1,8 +1,13 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page";
+import { PhotoModal } from "@/components/photoModal/photoModal";
+import { useState } from "react";
 
 const TireRotation = () => {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <>
       <section className="bg-primary-dark py-4">
@@ -20,11 +25,19 @@ const TireRotation = () => {
               </p>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-              <img src="/static/images/tires/rodizio.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => setModal(true)} src="/static/images/tires/rodizio.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
       </section>
+
+      {modal && (
+        <PhotoModal 
+          open={modal} 
+          setOpen={(value) => setModal(value)} 
+          url="/static/images/tires/rodizio.png"
+        />
+      )}
     </>
   );
 }

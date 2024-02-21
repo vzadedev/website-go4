@@ -1,8 +1,14 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page"
+import { PhotoModal } from "@/components/photoModal/photoModal";
+
+import { useState } from "react";
 
 const Locator = () => {
+
+  const [modal, setModal] = useState(false)
+  
   return (
     <>
       <div className="p-16">
@@ -43,12 +49,19 @@ const Locator = () => {
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img src="/static/images/locator/locator1.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => setModal(true)} src="/static/images/locator/locator1.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
       </section>
       
+      {modal && (
+        <PhotoModal 
+          open={modal} 
+          setOpen={(value) => setModal(value)} 
+          url="/static/images/locator/locator1.jpg"
+        />
+      )}
     </>
   );
 }
