@@ -325,11 +325,7 @@ const OurModules = () => {
               />
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Conheça Nosso Módulo de Gestão de Locação: Simples, Eficaz e Intuitivo
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">

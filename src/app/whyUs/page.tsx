@@ -21,7 +21,7 @@ const WhyUs = () => {
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           />
           <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Diferencias e características de nós.
+            Diferenciais e características de nós.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
