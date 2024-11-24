@@ -29,7 +29,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/inovacao.jpg" 
+                src="/static/images/whyUs/inovacao.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -60,7 +60,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/ambiental.jpg" 
+                src="/static/images/whyUs/ambiental.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -89,7 +89,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/cliente.jpg" 
+                src="/static/images/whyUs/cliente.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -118,7 +118,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/transparencia.jpg" 
+                src="/static/images/whyUs/transparencia.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -146,7 +146,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/eficiencia.jpg" 
+                src="/static/images/whyUs/eficiencia.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -174,7 +174,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/parceria.jpg" 
+                src="/static/images/whyUs/parceria.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -202,7 +202,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/desenvolvimento.jpg" 
+                src="/static/images/whyUs/desenvolvimento.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -231,7 +231,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/mar.jpg" 
+                src="/static/images/whyUs/mar.png" 
                 alt="" 
                 width={500}
                 height={100}
@@ -259,7 +259,7 @@ const WhyUs = () => {
           <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
             <div className="flex-shrink-0">
               <Image 
-                src="/static/images/whyUs/tech.jpg" 
+                src="/static/images/whyUs/tech.png" 
                 alt="" 
                 width={500}
                 height={100}

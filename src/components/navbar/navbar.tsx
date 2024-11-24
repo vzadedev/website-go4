@@ -16,6 +16,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import PlaceIcon from '@mui/icons-material/Place';
 
 import Sidebar from "../sidebar/sidebar";
 import { useMediaQuery, useTheme } from "@mui/material";
@@ -25,6 +26,11 @@ const menus = [
     icon: <HomeIcon />,
     label: 'Home',
     to: 'landingPage',
+  },
+  {
+    icon: <PlaceIcon />,
+    label: 'Tracker',
+    to: 'trackerSection'
   },
   {
     icon: <ProductionQuantityLimitsIcon />,
@@ -99,7 +105,7 @@ const NavBar = () => {
   return (
     <div className={`fixed ${!navbar ? `bg-transparent` : `bg-white`} w-full h-14 z-50 justify-between transition-all duration-500 ease-in-out`}>
       <div className={`flex ${!isMobileSmall ? 'justify-around' : 'justify-between'} ${!isMobileSmall ? 'p-0' : 'p-8'} mb-8 items-center bg-transparent h-full`}>
-        <img className="max-w-full w-14 h-w-14 rounded-lg mb-2" src={navbar ? "/static/images/go4-icon-azul.png" : "/static/images/logotipo-go4-bg-white.png"} alt="image description" />
+        <img className="max-w-full w-16 h-w-14 rounded-lg mb-2" src={navbar ? "/static/images/go4-icon-azul.png" : "/static/images/logotipo-go4-bg-white.png"} alt="image description" />
 
         {!isMobileSmall ? (
           <>

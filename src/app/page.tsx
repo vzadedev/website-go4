@@ -11,6 +11,7 @@ import Areas from '@/components/areas/page';
 import Clients from '@/components/clients/page';
 import Brief from '@/components/brief/page';
 import Footer from '@/components/footer/page';
+import Tracker from '@/components/tracker/page';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
       <NavBar />
       <LandingPage />
       <Projects />
+      <Tracker/>
       <OurModules />
       <Advantages />
       <AboutUs />

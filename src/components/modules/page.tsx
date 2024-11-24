@@ -10,7 +10,7 @@ const OurModules = () => {
   
   return (
     <>
-      <main className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
+      <main id="manfrotaSection" className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
         <div className="flex flex-wrap justify-center w-100% md:w-[70%] gap-4">
           {/* PRIMEIRA DIV  */}
           <div className="flex flex-col gap-4 w-[100%] lg:w-[42%] text-center rounded-lg h-[300px] text-slate-900 p-10 mt-10">
@@ -241,7 +241,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Pneus e Material Rodante"
+                text="Pneus"
                 el="h1"
                 className="text-red-700 text-xl font-bold"
               />
@@ -358,7 +358,7 @@ const OurModules = () => {
                 />
                 <AnimatedText
                   once
-                  text="Rastreamento"
+                  text="Material Rodante"
                   el="h1"
                   className="text-pink-700 text-xl font-bold"
                 />

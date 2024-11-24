@@ -12,27 +12,27 @@ import Slider from 'react-slick';
 const Areas = () => {
   const areas = [
     {
-      icon: '/static/images/areas/agroIndustria.jpg',
+      icon: '/static/images/areas/agroIndustria.png',
       label: 'Agroindustrias',
       text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
     },
     {
-      icon: '/static/images/areas/construtora.jpg',
+      icon: '/static/images/areas/construtora.png',
       label: 'Construtoras',
       text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
     },
     {
-      icon: '/static/images/areas/mineradora.jpg',
+      icon: '/static/images/areas/mineradora.png',
       label: 'Mineradoras',
       text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
     },
     {
-      icon: '/static/images/areas/transportadora.jpg',
+      icon: '/static/images/areas/transportadora.png',
       label: 'Transportadoras',
       text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
     },
     {
-      icon: '/static/images/areas/frotistas.jpg',
+      icon: '/static/images/areas/frotistas.png',
       label: 'Frotistas',
       text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
     },
@@ -41,7 +41,7 @@ const Areas = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
