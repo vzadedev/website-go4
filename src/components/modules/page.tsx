@@ -365,13 +365,13 @@ const OurModules = () => {
               </div>
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Entenda como administramos a localização dos equipamentos de sua frota pela latitude e longitude emitida pelos seus rastreadores.
+            O módulo Material Rodando do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">01</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Mapa de Localização da Frota
+                  Titulo material rodante 1
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -379,7 +379,7 @@ const OurModules = () => {
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">02</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Rastreamento Híbrido ( GPRS E SAT )
+                Titulo material rodante 2
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -387,7 +387,7 @@ const OurModules = () => {
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">03</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Captura de Horas/KM Automática
+                Titulo material rodante 3
                 </button>
               </div>
             </div>

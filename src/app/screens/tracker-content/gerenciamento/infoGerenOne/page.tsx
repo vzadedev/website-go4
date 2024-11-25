@@ -17,37 +17,37 @@ const Page = () => {
         <div className='grid lg:grid-cols-2 max-w-screen-xl mx-auto gap-10 my-20 px-5'>
           <div>
             <div className=' h-[70%]'>
-              <img 
+              <img
                 onClick={() => {
                   setModal(true);
-                  setUrl("/static/images/system/tracker/map.png");
+                  setUrl("/static/images/trackerPage/tiposRela.png");
                 }}
-                className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/map.png" />
+                className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/trackerPage/tiposRela.png" />
             </div>
             <div className='grid grid-cols-3 items-center justify-center max-w-screen-lg mt-6 gap-10'>
               <div>
-                <img 
+                <img
                   onClick={() => {
                     setModal(true);
-                    setUrl("/static/images/system/tracker/mapTruck.png");
+                    setUrl("/static/images/trackerPage/relaMoviPonto.png");
                   }}
-                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapTruck.png" />
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/trackerPage/relaMoviPonto.png" />
               </div>
               <div>
-                <img 
+                <img
                   onClick={() => {
                     setModal(true);
-                    setUrl("/static/images/system/tracker/mapCar.png");
+                    setUrl("/static/images/trackerPage/relaColetivoHori.png");
                   }}
-                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/mapCar.png" />
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/trackerPage/relaColetivoHori.png" />
               </div>
               <div>
-                <img 
+                <img
                   onClick={() => {
                     setModal(true);
-                    setUrl("/static/images/system/tracker/cluster.png");
+                    setUrl("/static/images/trackerPage/relaMoviPonto2.png");
                   }}
-                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/system/tracker/cluster.png" />
+                  className='h-full filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' src="/static/images/trackerPage/relaMoviPonto2.png" />
               </div>
             </div>
           </div>
@@ -57,23 +57,25 @@ const Page = () => {
             </div>
             <AnimatedText
               once
-              text="O que é"
+              text="Relatórios Detalhados para uma Gestão Completa"
               el="h1"
               className="text-3xl font-bold"
             />
             <div>
-              Com o modulo de RASTREAMENTO e TELEMETRIA do MANFROTA, você consegue ter na palma de sua mão
-              a gestão de utilização dos equipamentos como: controle de horas e km trabalhadas ou percorridos,
-              velocidade, ignição ON e OFF, trajeto percorrido.
+              Oferecemos uma variedade de relatórios para atender às
+              necessidades específicas da sua frota. Entre eles, estão:
+              Posições e Últimas Posições, que mostram em detalhes a localização
+              e o histórico recente dos veículos
               <br />
               <br />
-              Com o modulo de telemetria instalado, capturamos as horas e km trabalhados e gerenciamos
-              as manutenções preventivas dos equipamentos de forma individual, além disso entregamos
-              roteiros de manutenções preventivas levando em consideração as premissas dos fabricantes.
+              Movimento/Ponto, ideal para acompanhar trajetos e paradas; Horímetro e Odômetro,
+              que ajudam no controle de horas trabalhadas e distância percorrida; e o Relatório
+              Coletivo de Horímetro, que fornece uma visão consolidada das operações. Essas ferramentas
+              garantem precisão e agilidade na tomada de decisões.
             </div>
           </div>
         </div>
-      </main>     
+      </main>
 
       {modal && url && (
         <PhotoModal

@@ -40,7 +40,7 @@ const TrackerPage = () => {
               <CoverDemo />
             </div>
             <div className="flex text-sm flex-row justify-center items-center  ">
-              <div className="p-1 text-sm">
+              <div className="p-1 text-sm mr-8">
                 <h1 className="font-bold text-xl text-start">Gerenciamento</h1>
                 <p className="text-start ml-5">Cadastro de Rota</p>
                 <p className="text-start ml-5">Cadastro de Veículo</p>
@@ -58,21 +58,24 @@ const TrackerPage = () => {
                 <p className="text-start ml-5 mb-5">Relatório de Manutenção</p>
               </div>
               <div className="text-sm">
-                <h1 className="font-bold text-xl text-start">Gerenciamento</h1>
-                <p className="text-start ml-5">Cadastro de Rota</p>
-                <p className="text-start ml-5">Cadastro de Veículo</p>
-                <p className="text-start ml-5">Monitoramento de Frota</p>
-                <p className="text-start ml-5 mb-5">Gestão de Clientes</p>
-                <h1 className="font-bold text-2xl text-start">Dashboard</h1>
-                <p className="text-start ml-5">Velocidade Máxima</p>
-                <p className="text-start ml-5">Velocidade Mínima</p>
-                <p className="text-start ml-5">Histórico de Viagens</p>
-                <p className="text-start ml-5 mb-5">Alertas Ativos</p>
-                <h1 className="font-bold text-2xl text-start">Testes e Relatórios</h1>
-                <p className="text-start ml-5">Monitoramento em Tempo Real</p>
-                <p className="text-start ml-5">Teste de Rastreador</p>
-                <p className="text-start ml-5">Relatório de Consumo</p>
-                <p className="text-start ml-5 mb-5">Relatório de Manutenção</p>
+                <h1 className="font-bold text-xl text-start">Otimização Operacional</h1>
+                <p className="text-start ml-5">Análise de Desempenho</p>
+                <p className="text-start ml-5">Planejamento de Rotas</p>
+                <p className="text-start ml-5">Previsão de Manutenção</p>
+                <p className="text-start ml-5 mb-5">Redução de Custos Operacionais</p>
+
+                <h1 className="font-bold text-2xl text-start">Segurança Avançada</h1>
+                <p className="text-start ml-5">Rastreamento em Tempo Real</p>
+                <p className="text-start ml-5">Alertas Personalizados</p>
+                <p className="text-start ml-5">Zona Segura</p>
+                <p className="text-start ml-5 mb-5">Monitoramento de Comportamento</p>
+
+                <h1 className="font-bold text-2xl text-start">Relatórios Avançados</h1>
+                <p className="text-start ml-5">Relatório de Comportamento</p>
+                <p className="text-start ml-5">Relatório de Sustentabilidade</p>
+                <p className="text-start ml-5">Relatório de Ocorrências</p>
+                <p className="text-start ml-5 mb-5">Relatório de Desempenho</p>
+
               </div>
 
             </div>
