@@ -5,9 +5,9 @@ import AnimatedText from '@/components/animation/page';
 import { useRouter } from 'next/navigation'
 
 const OurModules = () => {
-  
+
   const router = useRouter()
-  
+
   return (
     <>
       <main id="manfrotaSection" className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
@@ -16,7 +16,7 @@ const OurModules = () => {
           <div className="flex flex-col gap-4 w-[100%] lg:w-[42%] text-center rounded-lg h-[300px] text-slate-900 p-10 mt-10">
             {/* Conteúdo da primeira div */}
             <span className="font-bold text-3xl">Conheça nossos módulos</span>
-              Tenha uma breve introdução sobre algumas ferramentas e funcionalidades de cada módulo
+            Tenha uma breve introdução sobre algumas ferramentas e funcionalidades de cada módulo
           </div>
           {/* PRIMEIRA DIV */}
           {/* PRIMEIRO MODULO */}
@@ -365,13 +365,13 @@ const OurModules = () => {
               </div>
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-            O módulo Material Rodando do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
+              O módulo Material Rodando do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">01</span>
                 <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Titulo material rodante 1
+                  Gestão Inteligente
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -379,7 +379,7 @@ const OurModules = () => {
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">02</span>
                 <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                Titulo material rodante 2
+                  Controle de Componentes
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -387,7 +387,7 @@ const OurModules = () => {
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">03</span>
                 <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                Titulo material rodante 3
+                  Manutenção Eficiente
                 </button>
               </div>
             </div>
