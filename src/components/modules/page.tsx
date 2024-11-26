@@ -370,7 +370,7 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">01</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Titulo material rodante 1
                 </button>
               </div>
@@ -378,7 +378,7 @@ const OurModules = () => {
 
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">02</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                 Titulo material rodante 2
                 </button>
               </div>
@@ -386,7 +386,7 @@ const OurModules = () => {
 
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">03</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                 Titulo material rodante 3
                 </button>
               </div>

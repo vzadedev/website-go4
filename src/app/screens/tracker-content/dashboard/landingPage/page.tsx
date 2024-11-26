@@ -12,11 +12,12 @@ const MaintenancePage = () => {
           <span className='text-white font-bold text-3xl my-2'>
             <Typewriter
               words={[
-                "ULTIMAS POSIÇÕES",
-                "HORÍMETRO",
-                "ODÔMETRO",
-                "RELATORIO COLETIVO DE HORÍMETRO",
+                "VISÃO GERAL",
+                "RELATÓRIOS DETALHADOS",
+                "MONITORAMENTO EM TEMPO REAL",
+                "ANÁLISES E MÉTRICAS",
               ]}
+
               loop={Infinity}
               typeSpeed={40}
               deleteSpeed={20}
@@ -24,7 +25,7 @@ const MaintenancePage = () => {
             />
           </span>
           <div className='text-white mb-7 text-xl'>
-            Um pouco sobre o módulo de <span className='font-bold'>Relatórios</span>
+            Um pouco sobre o <span className='font-bold'>Dashboard</span>
           </div>
           <hr className="h-[3px] w-64 border-t-0 bg-white/15  mb-7" />
           <a target='_blank' href="https://api.whatsapp.com/send?phone=5511982568090&text=&source=&data=&app_absent=" className='flex flex-row w-full md:w-64 h-[50px] rounded-[100px] hover:bg-white transition-all duration-500 ease-in-out bg-white/35 drop-shadow-theme'>
@@ -34,7 +35,7 @@ const MaintenancePage = () => {
           </a>
         </div>
       </main>
-      
+
     </>
   );
 }
