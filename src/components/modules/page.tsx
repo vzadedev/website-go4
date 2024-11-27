@@ -365,7 +365,7 @@ const OurModules = () => {
               </div>
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              O módulo Material Rodando do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
+              O módulo Material Rodante do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
