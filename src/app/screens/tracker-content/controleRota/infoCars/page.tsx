@@ -10,7 +10,7 @@ const Cars = () => {
   const [modal, setModal] = useState(false)
   const [modalImage, setModalImage] = useState(""); // Estado para armazenar a URL da imagem clicada
 
-  const openModal = (imageUrl) => {
+  const openModal = (imageUrl: string) => {
     setModalImage(imageUrl);
     setModal(true);
   };

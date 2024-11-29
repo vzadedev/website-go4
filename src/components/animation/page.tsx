@@ -1,5 +1,6 @@
 import { motion, useAnimation, useInView, Variant, Variants } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
+import { Texture, WebGLRenderTarget } from 'three';
 
 type AnimatedTextProps = {
   text: string | string[];
@@ -62,7 +63,7 @@ export const AnimatedText = ({
   }, [isInView]);
 
   return (
-    <Wrapper className={className}>
+    <div className={className}>
       <span className="sr-only">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
@@ -93,7 +94,7 @@ export const AnimatedText = ({
           </span>
         ))}
       </motion.span>
-    </Wrapper>
+    </div>
   );
 };
 

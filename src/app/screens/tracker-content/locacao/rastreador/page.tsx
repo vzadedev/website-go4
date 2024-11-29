@@ -110,7 +110,7 @@ export default function Page() {
 }
 
 // Componente Header
-export const Header = ({ translate, titleComponent }: { translate: MotionValue<number>, titleComponent: string }) => {
+const Header = ({ translate, titleComponent }: { translate: MotionValue<number>, titleComponent: string }) => {
     return (
         <motion.div
             style={{
@@ -124,7 +124,7 @@ export const Header = ({ translate, titleComponent }: { translate: MotionValue<n
 };
 
 // Componente Card
-export const Card = ({
+const Card = ({
     rotate,
     scale,
     children,
