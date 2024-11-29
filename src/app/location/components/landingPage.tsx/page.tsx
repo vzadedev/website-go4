@@ -1,7 +1,5 @@
 "use client"
 
-import AnimatedText from "@/components/animation/page"
-import MapIcon from '@mui/icons-material/Map';
 import { Typewriter } from "react-simple-typewriter";
 
 const LocationPage = () => {

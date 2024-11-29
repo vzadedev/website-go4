@@ -5,18 +5,18 @@ import AnimatedText from '@/components/animation/page';
 import { useRouter } from 'next/navigation'
 
 const OurModules = () => {
-  
+
   const router = useRouter()
-  
+
   return (
     <>
-      <main className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
+      <main id="manfrotaSection" className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
         <div className="flex flex-wrap justify-center w-100% md:w-[70%] gap-4">
           {/* PRIMEIRA DIV  */}
           <div className="flex flex-col gap-4 w-[100%] lg:w-[42%] text-center rounded-lg h-[300px] text-slate-900 p-10 mt-10">
             {/* Conteúdo da primeira div */}
             <span className="font-bold text-3xl">Conheça nossos módulos</span>
-              Tenha uma breve introdução sobre algumas ferramentas e funcionalidades de cada módulo
+            Tenha uma breve introdução sobre algumas ferramentas e funcionalidades de cada módulo
           </div>
           {/* PRIMEIRA DIV */}
           {/* PRIMEIRO MODULO */}
@@ -241,7 +241,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Pneus e Material Rodante"
+                text="Pneus"
                 el="h1"
                 className="text-red-700 text-xl font-bold"
               />
@@ -358,36 +358,36 @@ const OurModules = () => {
                 />
                 <AnimatedText
                   once
-                  text="Rastreamento"
+                  text="Material Rodante"
                   el="h1"
                   className="text-pink-700 text-xl font-bold"
                 />
               </div>
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Entenda como administramos a localização dos equipamentos de sua frota pela latitude e longitude emitida pelos seus rastreadores.
+              O módulo Material Rodante do MANFROTA permite monitorar em tempo real o deslocamento de materiais, garantindo controle e eficiência logística.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">01</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Mapa de Localização da Frota
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Gestão Inteligente
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">02</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Rastreamento Híbrido ( GPRS E SAT )
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Controle de Componentes
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">03</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Captura de Horas/KM Automática
+                <button onClick={() => router.push("/screens/material")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Manutenção Eficiente
                 </button>
               </div>
             </div>

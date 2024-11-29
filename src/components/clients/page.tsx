@@ -53,7 +53,7 @@ const clients = [
   },
   {
     occupation: 'Construtora',
-    logo: '/static/images/clients/logolopes.png'
+    logo: '/static/images/clients/logoLopes.png'
   },
   {
     occupation: 'Construtora',

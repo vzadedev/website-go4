@@ -55,7 +55,7 @@ export const Manfrota = () => (
                         </svg>
                     </div>
                 </div>
-                <div>
+                <div >
                     <AnimatedText
                         once
                         text="Interface Intuitiva"
