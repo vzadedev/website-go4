@@ -36,18 +36,19 @@ const CreateRolling = () => {
             <div>
               <AnimatedText
                 once
-                text="Gestão Inteligente de Material Rodante"
+                text="Gestão Material Rodante"
                 el="h1"
                 className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
-                O módulo de Material Rodante permite gerenciar insumos e
-                recursos de veículos, como abastecimentos, estoques, postos e reposições,
-                com relatórios e gráficos para decisões mais eficientes.
+                De forma simples e pratica o MANFROTA lança o modulo de gestão de MATERIAL RODANTE,
+                que possibilita e facilita, inspeções em campo via MOBILE, com medições, registro
+                por fotos e descrição de avarias via comando de voz, tudo isso para facilitar a
+                vida da equipe de campo / inspetores
               </p>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img onClick={() => setModal(true)} src="/static/images/material/viewMaterial.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
+              <img onClick={() => setModal(true)} src="/static/images/material/materialRodan.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@ const CreateRolling = () => {
         <PhotoModal
           open={modal}
           setOpen={(value) => setModal(value)}
-          url="/static/images/material/viewMaterial.png"
+          url="/static/images/material/materialRodan.png"
         />
       )}
     </>

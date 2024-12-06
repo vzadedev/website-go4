@@ -358,7 +358,7 @@ const OurModules = () => {
                 />
                 <AnimatedText
                   once
-                  text="Material Rodante"
+                  text="Gestão Material Rodante"
                   el="h1"
                   className="text-pink-700 text-xl font-bold"
                 />

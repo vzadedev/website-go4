@@ -10,7 +10,7 @@ export default function Fuel() {
       <LandingPage />
       <ViewRolling />
       <CreateRolling />
-      <EditRolling />
+      {/* <EditRolling /> */}
     </>
   );
 }
