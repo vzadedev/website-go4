@@ -1,6 +1,6 @@
-import LandingPage from "@/app/screens/tracker-content/locacao/landingPage/page";
-import Info from "@/app/screens/tracker-content/locacao/info/page";
-import Rastreio from "@/app/screens/tracker-content/locacao/rastreador/page";
+import LandingPage from "@/app/screens/tracker-content/mapa/landingPage/page";
+import Info from "@/app/screens/tracker-content/mapa/info/page";
+import Rastreio from "@/app/screens/tracker-content/mapa/rastreador/page";
 
 export default function Page() {
     return (
