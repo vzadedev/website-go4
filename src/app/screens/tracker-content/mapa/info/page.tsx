@@ -26,10 +26,11 @@ const page = () => {
           className="text-3xl text-center mt-6 font-bold text-gray-700"
         />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
-          Nosso sistema de rastreamento oferece monitoramento em tempo real da localização dos veículos,
-          garantindo segurança e eficiência. Com alertas instantâneos e relatórios detalhados, você pode
-          otimizar a gestão da sua frota. Acesso ao histórico de viagens permite análises e melhorias contínuas.
-          A interface intuitiva facilita o uso em qualquer dispositivo. Proteja seu investimento com tecnologia de ponta.
+          Nossa PLATAFORMA de rastreamento oferece monitoramento em tempo real da localização
+          de sua FROTA, garantindo segurança e eficiência. Com alertas instantâneos e relatórios detalhados,
+          você pode otimizar a gestão da sua frota. Acesso os históricos de viagens que permite análises detalhadas.
+          A interface intuitiva facilita o uso em qualquer dispositivo, inclusive na palma de sua mão. Proteja seu PATRIMONIO com
+          tecnologia de ponta.
         </p>
       </div>
 
@@ -44,7 +45,9 @@ const page = () => {
                 className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
-                <b>Rastreamento em Tempo Real</b>, <b>Alertas Instantâneos</b>, <b>Relatórios Detalhados</b>, <b>Controle de Localização</b> e <b>Monitoramento 24/7</b>.
+                DE: Veja o equipamento em tempo real <br />
+                PARA: Monitore seus ATIVOS em tempo real
+                Rastreamento em Tempo Real, Alertas Instantâneos, Relatórios Detalhados, Controle de Localização e Monitoramento 24/7.
               </p>
 
             </div>

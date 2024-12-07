@@ -45,66 +45,79 @@ export default function Page() {
     };
 
     return (
-        <div
-            className="h-[60rem] md:h-[70rem] flex items-center justify-center relative p-2 md:p-20"
-            ref={containerRef}
-        >
-            <div
-                className="py-10 md:py-40 w-full relative"
-                style={{
-                    perspective: "700px",
-                }}
-            >
-                <Header translate={translate} titleComponent="O Tracker permite acompanhar seus veículos diretamente em um mapa atualizado em tempo real. Você visualiza a localização exata, direção e status de cada veículo, garantindo controle total da frota.
-
-" />
-                <Card rotate={rotate} scale={scale}>
-                    <motion.div style={{ scale: imageZoom }} className="h-full w-full overflow-hidden">
-                        {/* Imagem com evento de clique */}
-                        <Image
-                            src="/static/images/trackerPage/mapa_veiculos2.png"
-                            alt="Imagem do mapa"
-                            width={100}
-                            height={100}
-                            className="w-full h-full object-cover cursor-pointer"
-                            onClick={openModal} // Abre a modal ao clicar
-                        />
-                    </motion.div>
-                </Card>
+        <div className="grid lg:grid-cols-2 grid-cols-1 2xl:text-2xl">
+            <div className="flex items-center justify-center ">
+                <div className="flex flex-wrap m-8">
+                    <p>
+                        DE: O Tracker permite acompanhar seus veículos diretamente em um mapa atualizado em tempo real. Você visualiza a localização exata, direção e status de cada veículo, garantindo controle total da frota.
+                    </p>
+                    <br />
+                    <p>
+                        PARA: Nossa PLATAFORMA permite acompanhar os ATIVOS no MAPA em tempo real. Com visualização e localização, garantindo total gestão de sua FROTA.
+                    </p>
+                </div>
             </div>
-
-            {/* Modal */}
-            {isModalOpen && (
-                <motion.div
-                    className="fixed inset-0 bg-black  bg-opacity-50 flex justify-center items-center z-50"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    onClick={closeModal} // Fecha ao clicar no fundo
+            <div
+                className="h-[60rem] md:h-[70rem] flex items-center justify-center relative p-2 md:p-20"
+                ref={containerRef}
+            >
+                <div
+                    className="py-10 md:py-40 w-full relative"
+                    style={{
+                        perspective: "700px",
+                    }}
                 >
-                    <motion.div
-                        className="relative inset-0 bg-white flex items-center justify-center z-50"
-                        onClick={(e) => e.stopPropagation()} // Impede que o clique dentro da modal feche
-                        initial={{ scale: 5 }}
-                        animate={{ scale: 1 }}
-                        exit={{ scale: 0.8 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <div className="absolute top-0 right-0 p-4 text-white cursor-pointer" onClick={closeModal}>
-                            <CloseIcon />
-                        </div>
-                        <Image
-                            src="/static/images/trackerPage/mapa_veiculos2.png"
-                            alt="Imagem em tamanho maior"
-                            width={800}
-                            height={800}
-                            className="object-contain max-h-screen w-full "
-                        />
-                    </motion.div>
-                </motion.div>
-            )}
+                    <Header translate={translate} titleComponent="" />
 
+                    <Card rotate={rotate} scale={scale}>
+                        <motion.div style={{ scale: imageZoom }} className="h-full w-full overflow-hidden">
+                            {/* Imagem com evento de clique */}
+                            <Image
+                                src="/static/images/trackerPage/mapa_veiculos2.png"
+                                alt="Imagem do mapa"
+                                width={100}
+                                height={100}
+                                className="w-full h-full object-cover cursor-pointer"
+                                onClick={openModal} // Abre a modal ao clicar
+                            />
+                        </motion.div>
+                    </Card>
+
+                </div>
+
+                {/* Modal */}
+                {isModalOpen && (
+                    <motion.div
+                        className="fixed inset-0 bg-black  bg-opacity-50 flex justify-center items-center z-50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        onClick={closeModal} // Fecha ao clicar no fundo
+                    >
+                        <motion.div
+                            className="relative inset-0 bg-white flex items-center justify-center z-50"
+                            onClick={(e) => e.stopPropagation()} // Impede que o clique dentro da modal feche
+                            initial={{ scale: 5 }}
+                            animate={{ scale: 1 }}
+                            exit={{ scale: 0.8 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <div className="absolute top-0 right-0 p-4 text-white cursor-pointer" onClick={closeModal}>
+                                <CloseIcon />
+                            </div>
+                            <Image
+                                src="/static/images/trackerPage/mapa_veiculos2.png"
+                                alt="Imagem em tamanho maior"
+                                width={800}
+                                height={800}
+                                className="object-contain max-h-screen w-full "
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+
+            </div>
         </div>
     );
 }
