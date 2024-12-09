@@ -45,15 +45,15 @@ export default function Page() {
     };
 
     return (
-        <div className="grid lg:grid-cols-2 grid-cols-1 2xl:text-2xl">
+        <div className="grid lg:grid-cols-2 grid-cols-1 2xl:text-lg">
             <div className="flex items-center justify-center ">
                 <div className="flex flex-wrap m-8">
                     <p>
-                        DE: O Tracker permite acompanhar seus veículos diretamente em um mapa atualizado em tempo real. Você visualiza a localização exata, direção e status de cada veículo, garantindo controle total da frota.
+                        <b>DE:</b> O Tracker permite acompanhar seus veículos diretamente em um mapa atualizado em tempo real. Você visualiza a localização exata, direção e status de cada veículo, garantindo controle total da frota.
                     </p>
                     <br />
                     <p>
-                        PARA: Nossa PLATAFORMA permite acompanhar os ATIVOS no MAPA em tempo real. Com visualização e localização, garantindo total gestão de sua FROTA.
+                        <b>PARA:</b> Nossa PLATAFORMA permite acompanhar os ATIVOS no MAPA em tempo real. Com visualização e localização, garantindo total gestão de sua FROTA.
                     </p>
                 </div>
             </div>
@@ -96,22 +96,22 @@ export default function Page() {
                         onClick={closeModal} // Fecha ao clicar no fundo
                     >
                         <motion.div
-                            className="relative inset-0 bg-white flex items-center justify-center z-50"
+                            className="relative inset-0 flex items-center justify-center z-50"
                             onClick={(e) => e.stopPropagation()} // Impede que o clique dentro da modal feche
                             initial={{ scale: 5 }}
                             animate={{ scale: 1 }}
                             exit={{ scale: 0.8 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div className="absolute top-0 right-0 p-4 text-white cursor-pointer" onClick={closeModal}>
+                            {/* <div className="absolute top-0 right-0 p-4 text-white cursor-pointer" onClick={closeModal}>
                                 <CloseIcon />
-                            </div>
+                            </div> */}
                             <Image
                                 src="/static/images/trackerPage/mapa_veiculos2.png"
                                 alt="Imagem em tamanho maior"
                                 width={800}
                                 height={800}
-                                className="object-contain max-h-screen w-full "
+                                className="object-contain max-h-screen w-2/3"
                             />
                         </motion.div>
                     </motion.div>

@@ -31,50 +31,50 @@ const Cars = () => {
           className="text-3xl text-center mt-6 font-bold text-gray-700"
         />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
-          Introdução ao processo de monitoramento e <b>GESTÃO DE ROTAS</b> na plataforma
+          Introdução ao processo de monitoramento e GESTÃO DE ROTAS na plataforma
         </p>
       </div>
 
       <section className="bg-white">
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
+            <div className="h-full">
               <AnimatedText
                 once
                 text="Rota"
                 el="h1"
                 className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
-              <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
-                Com o módulo de <b>CONTROLE DE ROTA</b> do <b>TRACKER</b>, você tem acesso a ferramentas completas para monitorar e gerenciar os trajetos de sua frota em tempo real. Esse módulo foi desenvolvido para garantir maior eficiência operacional, segurança e uma visão detalhada de todos os deslocamentos realizados pelos veículos durante as operações.
+              <p className="mt-3 text-lg text-gray-600 text-center sm:text-left flex flex-col ">
+                Com o módulo de CONTROLE DE ROTAS do GO4 TRACKER, você tem acesso a ferramentas completas para monitorar e gerenciar os trajetos de sua frota. Essa funcionalidade foi desenvolvida para garantir maior eficiência operacional, segurança e uma visão detalhada de todos os deslocamentos realizados durante as operações.
                 <br />
                 <br />
-                Através do gestor de rotas, é possível acompanhar em tempo real o deslocamento de cada veículo, identificar desvios de rota e visualizar paradas não programadas, tudo em uma interface intuitiva. Além disso, o sistema registra o histórico completo dos trajetos realizados, permitindo análises detalhadas para otimizar os processos logísticos.
+                Através do gestor de rotas, é possível acompanhar o deslocamento de sua frota, identificar desvios, visualizar paradas não programadas, tudo em uma interface intuitiva. Além disso, a plataforma registra o histórico completo dos trajetos realizados, permitindo análises detalhadas para otimizar os processos logísticos.
                 <br />
                 <br />
-                Com essas funcionalidades, o <b>CONTROLE DE ROTA</b> auxilia na redução de custos, melhoria da produtividade e maior transparência nas operações, garantindo que sua frota siga os caminhos mais eficientes e seguros para alcançar os melhores resultados.
+                Com essas funcionalidades, o CONTROLE DE ROTA auxilia na redução de custos, controlando a velocidade e o trajeto por onde o mesmo percorreu, com possiblidade de inclusão de CERCAS ELETRONICAS, em trechos críticos onde a velocidade tem que ser reduzida, garantindo assim, que sua frota siga os caminhos mais eficientes e seguros para alcançar os melhores resultados.
               </p>
 
             </div>
             <div className="flex flex-wrap justify-center">
               <div aria-hidden="true" className="m-4 w-full max-w-screen-md">
                 <img
-                  onClick={() => openModal("/static/images/trackerPage/rela.png")} src="/static/images/trackerPage/rela.png"
+                  onClick={() => openModal("/static/images/trackerPage/map_caminho.png")} src="/static/images/trackerPage/map_caminho.png"
                   alt="Relatório"
                   className="w-full h-auto rounded-lg shadow-lg dark:bg-gray-500 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
                 />
               </div>
               <div aria-hidden="true" className="m-4 w-full max-w-screen-md">
                 <img
-                  onClick={() => openModal("/static/images/trackerPage/relaHori.png")} src="/static/images/trackerPage/relaHori.png"
+                  onClick={() => openModal("/static/images/trackerPage/map_detalhe.png")} src="/static/images/trackerPage/map_detalhe.png"
                   alt="Relatório Horizontal"
                   className="w-full h-auto rounded-lg shadow-lg dark:bg-gray-500 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
                 />
               </div>
               <div aria-hidden="true" className="m-4 w-full max-w-screen-md">
                 <img
-                  onClick={() => openModal("/static/images/trackerPage/relaOdo.png")}
-                  src="/static/images/trackerPage/relaOdo.png"
+                  onClick={() => openModal("/static/images/trackerPage/map_dash.png")}
+                  src="/static/images/trackerPage/map_dash.png"
                   alt="Relatório Odômetro"
                   className="w-full h-auto rounded-lg shadow-lg dark:bg-gray-500 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
                 />
@@ -91,7 +91,7 @@ const Cars = () => {
           open={modal}
           setOpen={(value) => setModal(value)}
           url={modalImage}
-          size="large"
+          size="medium"
         />
       )}
     </>

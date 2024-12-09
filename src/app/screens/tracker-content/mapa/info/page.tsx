@@ -45,8 +45,9 @@ const page = () => {
                 className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
-                DE: Veja o equipamento em tempo real <br />
-                PARA: Monitore seus ATIVOS em tempo real
+                <b>DE:</b> Veja o equipamento em tempo real
+                <br />
+                <b>PARA:</b> Monitore seus ATIVOS em tempo real
                 Rastreamento em Tempo Real, Alertas Instantâneos, Relatórios Detalhados, Controle de Localização e Monitoramento 24/7.
               </p>
 
