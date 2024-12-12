@@ -62,7 +62,7 @@ export const AnimatedText = ({
   }, [isInView]);
 
   return (
-    <Wrapper className={className}>
+    <div className={className}>
       <span className="sr-only">{textArray.join(" ")}</span>
       <motion.span
         ref={ref}
@@ -93,7 +93,7 @@ export const AnimatedText = ({
           </span>
         ))}
       </motion.span>
-    </Wrapper>
+    </div>
   );
 };
 

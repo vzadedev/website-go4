@@ -25,8 +25,8 @@ const Projects = () => {
 
     setTimeout(() => setFade(true), 10);
 
-    component === 'Manfrota' || 'Tracker' && info.current ?
-      info.current.scrollIntoView({ behavior: 'smooth' })
+    (component === 'Manfrota'  && info.current) ||(component === 'Tracker' && info.current) ?
+      (info.current as any).scrollIntoView({ behavior: 'smooth' })
       : null;
 
   };
