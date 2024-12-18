@@ -75,7 +75,7 @@ const Projects = () => {
                   width={80}
                   height={0}
                 />
-                <div className="mt-2">Tracker <br />(Lançamento)</div>
+                <div className="mt-2">Tracker</div>
               </motion.div>
             </div>
             <div className=' p-2 flex flex-col items-center text-sm col text-[#b0bbcc] cursor-pointer gap-4'>

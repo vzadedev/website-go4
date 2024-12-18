@@ -47,7 +47,7 @@ const LandingPage = () => {
             }}
           >
             <span className='flex hover:text-white transition-all duration-500 ease-in-out items-center justify-center w-full font-bold text-white h-full'>
-              Lançamento do Tracker
+              Tracker
             </span>
           </a>
 
