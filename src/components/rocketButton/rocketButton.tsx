@@ -1,45 +1,29 @@
 "use client"
 
-import { useState } from "react";
-import RocketIcon from '@mui/icons-material/Rocket';
+import { WhatsApp } from "@mui/icons-material";
+
 
 const RocketButton = () => {
-  const [rocketClicked, setRocketClicked] = useState(false);
+  const whatsappNumber = "5517996069784"; 
+  const message = encodeURIComponent("Olá! Vim pelo site e gostaria de saber mais a respeito sobre os sistemas.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   const handleRocketClick = () => {
-    setRocketClicked(true);
-    setTimeout(() => {
-      setRocketClicked(false);
-      const element = document.getElementById('landingPage');
-      if (element) {
-        const offsetTop = element.offsetTop;
-        const scrollInterval = setInterval(() => {
-          const currentScroll = window.scrollY;
-          const scrollStep = (offsetTop - currentScroll) / 10;
-          if (Math.abs(currentScroll - offsetTop) > Math.abs(scrollStep)) {
-            window.scrollBy(0, scrollStep);
-          } else {
-            clearInterval(scrollInterval);
-            window.location.href = "#landingPage"; 
-          }
-        }, 16.7);
-      }
-    }, 1000); 
+    window.open(whatsappLink, '_blank');
   };
 
   return (
     <button
-      className={` bg-primary-light z-50 rounded-full w-16 h-16 fixed bottom-5 right-5`}
+      className="bg-green-700 z-50 rounded-full w-16 h-16 fixed bottom-5 right-5"
       onClick={handleRocketClick}
       style={{
-        color: '#fff', 
-        transform: rocketClicked ? 'translateY(15px)' : 'translateY(0)', 
-        transition: 'transform 0.5s ease', 
+        color: '#fff',
+        transition: 'transform 0.3s ease',
       }}
     >
-      <RocketIcon className={`${rocketClicked ? 'animate-shake' : null}`} />
+      <WhatsApp />
     </button>
   );
 }
 
-export default RocketButton
+export default RocketButton;
